@@ -7,13 +7,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src='script.js' defer></script>
 	<title>Lab 04</title>
-	<!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<style>
+		body {
+			font-family: 'Courier New', Courier, monospace;
+		}
+
+		h1 {
+			font-family: 'Courier New', Courier, monospace;
+		}
+	
+	
+	</style>
 </head>
 
 <body>
-	<h1>Minimal Todo List</h1>
-	<input  type='text'>
-	<button>+</button>
+
+	<div class="mx-auto max-w-max mt-10 ">
+		<h1 class="ml-2 mb-6 text-2xl self-center">Watashi No Todo List</h1>
+		<input class="rounded-full ring-2 h-10 p-3 ring-black-500" type='text' placeholder=" . . . "
+			onkeyup="enterTodoList(event)">
+		<button class="rounded-full font-black ring-2 w-10 h-10 text-sm  bg-white"
+			onclick="addTodoList()">+</button>
+	</div>
+
+	<div id="field" class="space-y-1">
+		<div id="todoList" class="flex flex-col z-0 space-y-1"></div>
+		<div id="finishList" class="space-y-1"></div>
+	</div>
+
 </body>
 
 </html>
