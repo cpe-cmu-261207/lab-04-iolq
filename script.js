@@ -100,8 +100,8 @@ const loadTodoList = (input, index) => {
     deleteBtn.classList.add("invisible")
     
     deleteBtn.classList.add("shadow-md")
-    doneBtn.innerHTML = " O "
-    deleteBtn.innerHTML = " X "
+    doneBtn.innerHTML = "done *･'(ﾟ▽ﾟ)'･* "
+    deleteBtn.innerHTML = "delete ((；ﾟДﾟ)) "
 
     doneBtn.addEventListener("click", () => {
         deleteBtn.disabled = true
